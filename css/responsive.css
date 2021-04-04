@@ -54,6 +54,10 @@ border: 1.5px solid #f53f2c;
     border: 1px solid #b73426;
 }
 
+ .secondhead h1 {
+    font-size: 50px;
+}   
+    
 .sectionhead {
 padding: 0 70px;
 }
