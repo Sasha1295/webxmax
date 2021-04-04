@@ -35,7 +35,13 @@
     margin-top: -560px;  
     margin-right: 10px;
 }
-
+    
+#fourth_section {
+    background-size: 100px 100px;
+    background-position: right -15;
+    padding-top: -70px;
+    }
+    
    .btn {
     border-radius: 20px;
     padding: 10px 30px;
