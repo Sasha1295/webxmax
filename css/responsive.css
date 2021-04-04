@@ -71,6 +71,10 @@ line-height: 1.6em;
  height: 600px;
 }
 
+ #second_section .container{
+    padding: 25px 0;   
+}  
+    
 #fifth_section .container {
  padding: 25px 0;
 }
