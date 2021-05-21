@@ -84,10 +84,13 @@ line-height: 1.6em;
  padding: 25px 0;
 }
 
+#third_section .content {
+    padding: 65px 10px;
+   }
+   
+
 #third_section img {
-margin: -30px;
-margin-bottom: -15px;
-margin-left: -50px;
+margin-left: 20px;
 height: 428px;
 width: 343px;
 }
