@@ -15,16 +15,11 @@
     width: 120px;
     }
 
-    .santa {
-        position: absolute;
-        right: -70px;
-        top: 300px;
-    }
-    
-    .santa_pic {
+   .santa_pic {
     height: 170px;
     width: 125px;
 }
+
 
     #primaire-nav {
         height: 40px;
