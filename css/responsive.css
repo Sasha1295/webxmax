@@ -38,7 +38,6 @@
     
 #fourth_section {
     background-size: 100px 100px;
-    margin: 40px;
     }
     
    .btn {
@@ -81,7 +80,7 @@ line-height: 1.6em;
 }  
     
 #fifth_section .container {
- padding: 25px 0;
+ padding: 25px 10px;
 }
 
 #third_section .content {
