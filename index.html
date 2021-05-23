@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="">
+<head> 
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>It's Christmas Time!</title>
+
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/animate.css">
+
+<link rel="icon" href="christmas-ball.png">
+
+<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+<script src="JQuery.js"></script>
+
+</head>
+
+    <body>
+
+        <style>
+            /* customizable snowflake styling */
+            .snowflake {
+              color: #fff;
+              font-size: 1em;
+              font-family: Arial, sans-serif;
+              text-shadow: 0 0 5px #000;
+            }
+            
+            @-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%,100%{-webkit-transform:translateX(0);transform:translateX(0)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}.snowflake:nth-of-type(10){left:25%;-webkit-animation-delay:2s,0s;animation-delay:2s,0s}.snowflake:nth-of-type(11){left:65%;-webkit-animation-delay:4s,2.5s;animation-delay:4s,2.5s}
+            </style>
+            <div class="snowflakes" aria-hidden="true">
+              <div class="snowflake">
+              ❅
+              </div>
+              <div class="snowflake">
+              ❆
+              </div>
+              <div class="snowflake">
+              ❅
+              </div>
+              <div class="snowflake">
+              ❆
+              </div>
+              <div class="snowflake">
+              ❅
+              </div>
+              <div class="snowflake">
+              ❆
+              </div>
+              <div class="snowflake">
+                ❅
+              </div>
+              <div class="snowflake">
+                ❆
+              </div>
+              <div class="snowflake">
+                ❅
+              </div>
+              <div class="snowflake">
+                ❆
+              </div>
+              <div class="snowflake">
+                ❅
+              </div>
+              <div class="snowflake">
+                ❆
+              </div>
+            </div>
+            
+        <section id="first_section">
+            <div id="fs_text">
+                        <div class="bg">
+                            <div class="centerer">
+                                <a href="#" class="button"><h2 id="holiday_season_sale" class="animated flash">Xmas Sale</h2></a>
+                                <hr>
+                                <h1 id="time_again" class="animated flipInY">Yes! It's Christmas Time!</h1>
+                                <h3 id="save_up_to" class="animated heartBeat">Bespaar tot  <span class="optional">70% korting!</span> </h3>
+                                <hr>
+                                <h5 id="offer_ends" class="animated bounce"> Alleen tot 31 december </h5>
+                               <img id="bigbell" class="animated bigbell tada infinite" src="img/bell.png" alt="">
+                            </div>
+                            </div>
+                            </div>
+                        
+                         <div class="santa animated bounceInDown">
+                            <img class="santa_pic" src="img/santa.png" alt="">
+                        </div>
+        </section>
+<hr>
+
+        <nav  id="primaire-nav">
+            <ul  class="tab">
+              <li> <a  href=""> <span class="text">Home</span> </a> </li>
+              <li> <a  href=""> <span class="text">Sale</span> </a> </li>
+              <li> <a  href=""> <span class="text">Nieuws</span> </a> </li>
+              <li> <a  href=""> <span class="text">Onze winkel</span> </a> </li>
+              <li> <a  href=""> <span class="text">Contact</span> </a> </li>
+             
+          <div data-block="minicart" class="minicart-wrapper">
+            <a class="action showcart" href="">
+            <!-- ko if: getCartParam('summary_count') -->
+             <img class="" data-bind="css: {'active': !!getCartParam('summary_count')}" src="img/cart.svg" alt=""> 
+             <span class="text">Winkelmandje</span> 
+            <!-- /ko -->
+            <span class="counter qty empty" data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+            <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+            <span class="counter-label">
+            <!-- ko if: getCartParam('summary_count') -->
+            <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
+            <!-- ko i18n: 'items' --><!-- /ko -->
+            <!-- /ko -->
+            </span>
+            </span>
+        </a>
+        <div class="block block-minicart empty"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+          </div>
+        </ul>
+        </nav> 
+            
+
+        <section id="second_section" class="container">
+            <div class="secondhead">
+             <h1> <span class="highlight"> Welkom! </span> </h1> 
+            <h2>Welkom op de site waar u het perfecte kerstcadeau kunt vinden!</h2>
+             <hr>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-6 col-lg-4">
+                    <img class=""  src="img/presents.png" alt="">
+                    <a href="" class="btn btn-default"><h4>Kies een cadeau</h4></a> 
+                    </div>
+
+
+                <div class="col-md-6 col-lg-4">
+                    <img src="img/tree.png" alt="">
+                    <a href="" class="btn btn-default"><h4>Kerst versiering</h4></a>
+                 </div>
+
+            
+                    <div class="col-md-6 col-lg-4">
+                        <img src="img/star.png" alt="">
+                        <a href="" class="btn btn-default"><h4>Kerstlichten</h4></a>
+                    </div>
+
+                    
+                <div class="col-md-6 col-lg-4">
+                    <img src="img/santabag.png" alt="">
+                    <a href="" class="btn btn-default"><h4> Leuke Kerstkaarten</h4></a>
+                  </div>
+
+                
+                    <div class="col-md-6 col-lg-4">
+                        <img src="img/ball.png" alt="">
+                        <a href="" class="btn btn-default"><h4>Kerstboom versiering</h4></a>
+                     </div>
+
+                    
+                        <div class="col-md-6 col-lg-4">
+                            <img src="img/present2.png" alt="">
+                            <a href="" class="btn btn-default"><h4>Cadeau Sets</h4></a>
+                          </div>
+    </section>
+
+    <section id="third_section">
+        <div class="lightoverlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="img/christmas tree.png" alt="">
+                    </div>
+                    <div class="sectionhead content col-md-8">
+                        <h2> <span class="highlight">Over ons </span> </h2>
+                            <p>Onze website It's Christmas Time! is de perfecte website voor iedereen die een kerstcadeau wil geven aan vrienden en familie. Hier vind je een uitgebreide selectie cadeaus waar iedereen blij van kan worden! Onze kerstwinkel biedt je een geweldige winkelervaring met producten van hoge kwaliteit en geweldige prijsprestaties. Kijk en geniet ervan. </p>
+                            P.S. Je kunt ook langskomen in onze winkel om nog meer de magie van Kerstmis te ervaren.
+                            <a href="" class="btn btn-default">Zoek onze winkel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fourth_section" class="container">
+<div class="sectionhead text-center">
+    <h2><span class="highlight">Uitverkoop! Uitverkoop! Uitverkoop!</span></h2>
+        <p>Mis onze uitverkoop niet !!</p>
+        <hr>
+        </div>
+
+        <hr>
+
+   <div class="row moreitems">
+       <div class="col-xl-6">
+           <div class="row">
+               <div class="col-xl-4">
+                   <a href="">
+                       <img class="productimg" src="img/present product.png" alt="">
+                   </a>
+
+                   <div class="smalltag offertag fixedoffer">
+                       <h4> 50%</h4>
+                       <p>korting</p>
+                       </div>
+                   </div>
+
+                   <div class="col-xl-8 product_text">
+                    <h4><a href=""> De perfecte kersttafelset</a> </h4>
+                    <p> waar je borden en glazen voor op tafel vindt</p>
+                    <p class="price">EUR <span class="highlight"> €25.00</span> / stuk</p>
+                   <p>Originele prijs: EUR  €50.00. U bespaart:EUR €25.00 </p>
+                   </div>
+               </div>
+           </div>
+   
+       
+        <div class="col-xl-6">
+            <div class="row">
+                <div class="col-xl-4">
+                    <a href="">
+                        <img class="productimg" src="img/santabag.png" alt="">
+                    </a>
+ 
+                    <div class="smalltag offertag fixedoffer">
+                        <h4>70%</h4>
+                        <p>korting</p>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 product_text">
+                     <h4><a href=""> Kerstkaarten</a> </h4>
+                     <p> Mooie set kerstkaarten voor familie en vrienden</p>
+                    <p class="price">EUR <span class="highlight"> €3.00</span> / stuk</p>
+                    <p>Originele prijs: EUR  €10.00. U bespaart:EUR €7.00 </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row moreitems">
+            <div class="col-xl-6">
+                <div class="row">
+                    <div class="col-xl-4">
+                        <a href="">
+                            <img class="productimg" src="img/santabag.png" alt="">
+                        </a>
+     
+                        <div class="smalltag offertag fixedoffer">
+                            <h4> 50-70%</h4>
+                            </div>
+                        </div>
+     
+                        <div class="col-xl-8 product_text">
+                         <h4><a href=""> Kerst kleding</a> </h4>
+                         <p> Truien, sokken, pantoffels, hoeden...</p>
+                        </div>
+                    </div>
+                </div>
+            
+             <div class="col-xl-6">
+                 <div class="row">
+                     <div class="col-xl-4">
+                         <a href="">
+                             <img class="productimg" src="img/present product.png" alt="">
+                         </a>
+      
+                         <div class="smalltag offertag fixedoffer">
+                             <h4> 40-60%</h4>
+                             </div>
+                         </div>
+                         <div class="col-xl-8 product_text">
+                          <h4><a href=""> Decoraties voor de kerstboom</a> </h4>
+                          <p> Engelen, sterren, kerstballen / lichten...</p>
+                     </div>
+                 </div>
+             </div>
+    </section>
+
+    <section id="fifth_section">
+        <div class="darkoverlay">
+            <div class="container text-center">
+            <img id="santaicon" class="santaicon animated tada infinite" src="img/santa head.png" alt="">
+            <div class="sectionhead">
+                <h2> Meld u aan voor  <span class="highlight">aankomende hot deals</span></h2>
+                <p>
+                    Vul hieronder uw naam en e-mailadres in.
+                </p>
+             </div>
+             <div class="mailchimp">
+                 <form action="" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" no validate>
+                 <input type="text" value="" name="FNAME" id="mc-FNAME" placeholder="Naam" required>
+                 <input type="email" value="" name="EMAIL" id="mc-EMAIL" placeholder="E-mailadres" required>
+                 <input type="submit" value="Abonneren" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">
+                 </form>
+                 </div>
+            </div>
+        </div>
+            </section>
+
+            <footer id="sixth_section" class="container text-center">
+                <h2 class="logo">It's <span class="highlight">Christmas</span> Time!</h2>
+                <img class="santacap" src="img/santas hat.png">
+                <p>Bedankt voor uw bezoek!</p>
+                <hr>
+                <small class="copyright">
+                    Copyright © 2018-2021 It's Christmas Time!
+                    </small>
+                </footer>
+
+                <section id="seventh_section">
+               <ul class="sticky">
+                   <li><a href=""><img title="" alt="" src="img/facebook.svg"/>
+                <p>Facebook </p>
+                </a>
+            </li>
+
+            <li><a href=""><img title="" alt="" src="img/twitter.svg"/>
+                <p>Twitter </p>
+                </a>
+            </li>
+
+            <li><a href=""><img title="" alt="" src="img/linkedin.svg"/>
+                <p>Linkedin </p>
+                </a>
+            </li>
+
+            <li><a href=""><img title="" alt="" src="img/google plus.svg"/>
+                <p>Google Plus </p>
+                </a>
+            </li>
+
+            <li><a href=""><img title="" alt="" src="img/instagram.svg"/>
+                <p>Instagram </p>
+                </a>
+            </li>
+            
+               </ul>
+                </section>
+
+                
+    </body>
+</html>
