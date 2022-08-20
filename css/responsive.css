@@ -1,37 +1,30 @@
 @media screen and (max-width: 1050px) {
  
-   #time_again {
-        font-size: 20px;
-      }
-    
-   .fa-shopping-cart {
-            margin-right: 25px; 
-           } 
-
-    .nav-item {
+ .nav-item {
             font-size: 1em;
         }
 
-  #save_up_to {
+ #time_again {
+        font-size: 18px;
+      }
+ 
+  .christmas-ball {
+        height: 60px;
+        width: 60px;
+      }
+
+
+    h3 {
         font-size: 12px;
     }
 
-    #offer_ends {
-        font-size: 10px;
-        }
-
-  #bigbell {
-   height: 100px;
-    width: 100px;
+    #first_section {
+        height: 570px;
     }
 
     #second_section {
        width: 91%;
-        }
-
-        .secondhead h1 {
-            font-size: 30px;
-        }   
+        } 
            
     .sectionhead p {
         font-size: 15px;
@@ -48,7 +41,7 @@
             }
    
             #third_section {
-                height: 600px;
+                height: 650px;
                 }
 
                 #third_section .content {
@@ -56,8 +49,8 @@
                    }
 
                  #third_section img {
-                height: 300px;
-                width: 300px;
+                height: 270px;
+                width: 270px;
                 } 
    
                 .productimg {
@@ -104,6 +97,11 @@
               .featureditem img {
               margin-top: 15px;
               width: 100%;
+            }
+ 
+ .mailchimp {
+                width: 89%; 
+                padding-left: 43px;
             }
 }
  
